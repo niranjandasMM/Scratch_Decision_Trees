@@ -1,0 +1,39 @@
+digraph {
+	"" [label="petal width (cm) <= 0.6"]
+	L [label="prediction: 0"]
+	"" -> L
+	R [label="petal width (cm) <= 1.7"]
+	"" -> R [label=left]
+	RL [label="petal length (cm) <= 4.9"]
+	R -> RL [label=left]
+	RLL [label="petal width (cm) <= 1.6"]
+	RL -> RLL [label=left]
+	RLLL [label="prediction: 1"]
+	RLL -> RLLL
+	RLLR [label="prediction: 2"]
+	RLL -> RLLR
+	RLR [label="sepal width (cm) <= 2.6"]
+	RL -> RLR [label=left]
+	RLRL [label="prediction: 2"]
+	RLR -> RLRL
+	RLRR [label="sepal length (cm) <= 6.3"]
+	RLR -> RLRR [label=left]
+	RLRRL [label="sepal length (cm) <= 6.0"]
+	RLRR -> RLRRL [label=left]
+	RLRRLL [label="prediction: 1"]
+	RLRRL -> RLRRLL
+	RLRRLR [label="prediction: 2"]
+	RLRRL -> RLRRLR
+	RLRRR [label="prediction: 1"]
+	RLRR -> RLRRR
+	RR [label="sepal length (cm) <= 5.9"]
+	R -> RR [label=left]
+	RRL [label="sepal length (cm) <= 5.8"]
+	RR -> RRL [label=left]
+	RRLL [label="prediction: 2"]
+	RRL -> RRLL
+	RRLR [label="prediction: 1"]
+	RRL -> RRLR
+	RRR [label="prediction: 2"]
+	RR -> RRR
+}
