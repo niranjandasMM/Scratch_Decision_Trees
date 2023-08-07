@@ -1,0 +1,20 @@
+digraph Tree {
+    node [shape=box] ;
+    0 [label="feature <= 5.0\ngini = 0.5\nsamples = ?\nvalue = [?, ?]"] ;
+    0 -> 1 [label="yes"] ;
+    0 -> 2 [label="no"] ;
+    1 [label="prediction: A\ngini = 0.444\nsamples = ?\nvalue = [?, ?]"] ;
+    2 [label="feature <= 6.5\ngini = 0.444\nsamples = ?\nvalue = [?, ?]"] ;
+    2 -> 3 [label="yes"] ;
+    2 -> 4 [label="no"] ;
+    3 [label="feature <= 5.7\ngini = 0.5\nsamples = ?\nvalue = [?, ?]"] ;
+    3 -> 5 [label="yes"] ;
+    3 -> 6 [label="no"] ;
+    5 [label="feature <= 5.5\ngini = 0.444\nsamples = ?\nvalue = [?, ?]"] ;
+    5 -> 7 [label="yes"] ;
+    5 -> 8 [label="no"] ;
+    7 [label="prediction: B\ngini = 0.5\nsamples = ?\nvalue = [?, ?]"] ;
+    8 [label="prediction: A\ngini = 0.5\nsamples = ?\nvalue = [?, ?]"] ;
+    6 [label="prediction: B\ngini = 0.5\nsamples = ?\nvalue = [?, ?]"] ;
+    4 [label="prediction: A\ngini = 0.444\nsamples = ?\nvalue = [?, ?]"] ;
+}
