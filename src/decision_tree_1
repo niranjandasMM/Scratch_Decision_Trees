@@ -1,0 +1,20 @@
+// Decision Tree
+digraph {
+    Root [label="petal length (cm) <= 1.9"]
+    Root_0 [label="Prediction: 0"]
+    Root -> Root_0 [label=0]
+    Root_1 [label="petal length (cm) <= 4.7"]
+    Root -> Root_1 [label=1]
+    Root_1_1 [label="petal width (cm) <= 1.7"]
+    Root_1 -> Root_1_1 [label=1]
+    Root_1_1_1 [label="sepal length (cm) <= 5.9"]
+    Root_1_1 -> Root_1_1_1 [label=1]
+    Root_1_1_1_1 [label="sepal width (cm) <= 3.0"]
+    Root_1_1_1 -> Root_1_1_1_1 [label=1]
+    Root_1_1_1_2 [label="Prediction: 2"]
+    Root_1_1_1 -> Root_1_1_1_2 [label=2]
+    Root_1_1_2 [label="Prediction: 2"]
+    Root_1_1 -> Root_1_1_2 [label=1]
+    Root_1_2 [label="Prediction: 1"]
+    Root_1 -> Root_1_2 [label=2]
+}
